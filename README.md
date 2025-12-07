@@ -1,6 +1,8 @@
 # Nagi
 
-Touch-friendly web-based terminal for iOS/iPad. Supports fullscreen applications like tmux and Claude Code.
+Touch-friendly web-based terminal optimized for vibe coding. Access your terminal from iPad/iPhone without a hardware keyboard and enjoy coding from anywhere - your couch, bed, or cafe.
+
+Supports fullscreen applications like tmux and Claude Code.
 
 **[日本語版 README](README.ja.md)**
 
