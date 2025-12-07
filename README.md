@@ -6,6 +6,8 @@ Supports fullscreen applications like tmux and Claude Code.
 
 **[日本語版 README](README.ja.md)**
 
+![Nagi Screenshot](images/image1.png)
+
 ## Features
 
 - **Touch-optimized**: Fully usable without a hardware keyboard

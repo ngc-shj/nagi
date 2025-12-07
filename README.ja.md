@@ -4,6 +4,10 @@
 
 tmuxやClaude Codeなどのフルスクリーンアプリケーションに対応。
 
+![Nagi スクリーンショット](images/image1.png)
+
+![Nagi スクリーンショット2](images/image2.png)
+
 ## 特徴
 
 - **タッチ操作対応**: ハードウェアキーボードなしでも操作可能
