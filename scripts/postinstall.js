@@ -49,7 +49,7 @@ if (hasUv()) {
   console.log('Using uv for faster installation...');
   try {
     execSync(`uv venv "${venvDir}"`, { cwd: pythonDir, stdio: 'inherit' });
-    execSync(`uv pip install --python "${venvDir}" fastapi uvicorn websockets`, {
+    execSync(`uv pip install --python "${venvDir}" fastapi uvicorn websockets qrcode`, {
       cwd: pythonDir,
       stdio: 'inherit'
     });
@@ -70,7 +70,7 @@ if (hasUv()) {
       : path.join(venvDir, 'bin', 'pip');
 
     // Install dependencies
-    execSync(`"${pipPath}" install fastapi uvicorn websockets`, {
+    execSync(`"${pipPath}" install fastapi uvicorn websockets qrcode`, {
       cwd: pythonDir,
       stdio: 'inherit'
     });
