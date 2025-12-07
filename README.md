@@ -1,25 +1,27 @@
 # WebSSH
 
-iOS/iPad向けタッチフレンドリーなWebベースターミナル。tmuxやClaude Codeなどのフルスクリーンアプリケーションに対応。
+Touch-friendly web-based terminal for iOS/iPad. Supports fullscreen applications like tmux and Claude Code.
 
-## 特徴
+**[日本語版 README](README.ja.md)**
 
-- **タッチ操作対応**: ハードウェアキーボードなしでも操作可能
-- **特殊キーボタン**: Ctrl, Alt, Esc, Tab, Enter, 矢印キー等
-- **tmuxサポート**: tmux操作用のクイックボタンパネル
-- **日本語入力**: テキスト入力モーダルで長文入力に対応
-- **自動コマンド実行**: 接続時に指定コマンドを自動実行
-- **xterm.js**: フル機能のターミナルエミュレーション
+## Features
 
-## インストール
+- **Touch-optimized**: Fully usable without a hardware keyboard
+- **Special keys**: Ctrl, Alt, Esc, Tab, Enter, Arrow keys, etc.
+- **tmux support**: Quick button panel for tmux operations
+- **Text input**: Modal for pasting long text or CJK characters
+- **Auto-execute**: Run commands automatically on connection
+- **xterm.js**: Full-featured terminal emulation
 
-### npm (推奨)
+## Installation
+
+### npm (Recommended)
 
 ```bash
 npm install -g webssh-terminal
 ```
 
-### 手動インストール
+### Manual Installation
 
 ```bash
 git clone https://github.com/shi3z/webssh.git
@@ -27,27 +29,27 @@ cd webssh
 uv sync
 ```
 
-## 使い方
+## Usage
 
-### npm版
+### npm
 
 ```bash
 webssh
-webssh -p 8080  # ポート指定
-webssh -c /path/to/config.json  # 設定ファイル指定
+webssh -p 8080  # Custom port
+webssh -c /path/to/config.json  # Custom config file
 ```
 
-### 手動版
+### Manual
 
 ```bash
 uv run python main.py
 ```
 
-ブラウザで `http://<サーバーIP>:8765/` にアクセス。
+Open `http://<server-ip>:8765/` in your browser.
 
-## 設定
+## Configuration
 
-`config.json` で設定可能:
+Edit `config.json`:
 
 ```json
 {
@@ -57,45 +59,45 @@ uv run python main.py
 }
 ```
 
-| 設定 | 説明 | デフォルト |
-|------|------|------------|
-| `startup_command` | 接続時に自動実行するコマンド | `tmux a \|\| tmux new` |
-| `shell` | 使用するシェル | `/bin/bash` |
-| `port` | 待ち受けポート | `8765` |
+| Option | Description | Default |
+|--------|-------------|---------|
+| `startup_command` | Command to run on connection | `tmux a \|\| tmux new` |
+| `shell` | Shell to use | `/bin/bash` |
+| `port` | Listen port | `8765` |
 
-## コントロールパネル
+## Control Panel
 
-### 基本キー
-- **Ctrl** / **Alt**: モディファイアキー（トグル）
-- **Esc** / **Tab** / **Enter**: 特殊キー
-- **矢印キー**: カーソル移動
-- **Home** / **End** / **PgUp** / **PgDn**: ナビゲーション
+### Basic Keys
+- **Ctrl** / **Alt**: Modifier keys (toggle)
+- **Esc** / **Tab** / **Enter**: Special keys
+- **Arrow keys**: Cursor movement
+- **Home** / **End** / **PgUp** / **PgDn**: Navigation
 
-### ショートカット
-- **^C**: 中断 (Ctrl+C)
+### Shortcuts
+- **^C**: Interrupt (Ctrl+C)
 - **^D**: EOF (Ctrl+D)
-- **^Z**: サスペンド (Ctrl+Z)
+- **^Z**: Suspend (Ctrl+Z)
 
-### tmuxパネル
-`tmux`ボタンで展開:
-- **c**: 新規ウィンドウ
-- **n** / **p**: 次/前のウィンドウ
-- **d**: デタッチ
-- **%** / **"**: 縦/横分割
-- **o**: ペイン切替
-- **z**: ズーム
-- **[**: コピーモード
+### tmux Panel
+Expand with the `tmux` button:
+- **c**: New window
+- **n** / **p**: Next/Previous window
+- **d**: Detach
+- **%** / **"**: Split vertical/horizontal
+- **o**: Switch pane
+- **z**: Zoom
+- **[**: Copy mode
 
-### テキスト入力
-`Text`ボタンで入力モーダルを開き、長文や日本語をペーストしてターミナルに送信。
+### Text Input
+Click the `Text` button to open a modal for pasting long text or CJK characters.
 
-## 要件
+## Requirements
 
 - Python 3.10+
 - FastAPI
 - uvicorn
 - websockets
 
-## ライセンス
+## License
 
 MIT
