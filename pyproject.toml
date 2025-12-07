@@ -1,0 +1,15 @@
+[project]
+name = "webssh"
+version = "0.1.0"
+description = "Web-based terminal for iOS/iPad with touch-friendly controls"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.115.0",
+    "uvicorn>=0.32.0",
+    "websockets>=13.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
