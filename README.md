@@ -8,6 +8,10 @@ Supports fullscreen applications like tmux and Claude Code.
 
 ![Nagi Screenshot](images/image1.png)
 
+### Works on iPhone too
+
+![Nagi on iPhone](images/iPhone.png)
+
 ## Features
 
 - **Touch-optimized**: Fully usable without a hardware keyboard

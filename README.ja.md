@@ -8,6 +8,10 @@ tmuxやClaude Codeなどのフルスクリーンアプリケーションに対�
 
 ![Nagi スクリーンショット2](images/image2.png)
 
+### iPhoneでも動作可能
+
+![Nagi on iPhone](images/iPhone.png)
+
 ## 特徴
 
 - **タッチ操作対応**: ハードウェアキーボードなしでも操作可能
